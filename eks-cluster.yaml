@@ -1,0 +1,13 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: microservice-cluster
+  region: us-east-1
+
+nodeGroups:
+  - name: ng-1
+    instanceType: a1.large
+    desiredCapacity: 1
+    volumeSize: 40
+  
